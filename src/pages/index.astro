@@ -1,0 +1,37 @@
+---
+import Base from "../layouts/Base.astro";
+import data from "../data/verified.json";
+
+// Group entries by category
+const categories = [...new Set(data.map((d: any) => d.category))];
+const city = data[0]?.city ?? "Your City";
+---
+
+<Base title={`${city} Climate Action Guide`}>
+  <main class="max-w-3xl mx-auto px-6 py-12">
+    <header class="mb-12">
+      <h1 class="text-4xl font-bold tracking-tight mb-3">{city} Climate Action Guide</h1>
+      <p class="text-lg text-stone-600">
+        Practical local actions you can take today — verified and sourced.
+      </p>
+    </header>
+
+    <!-- Replace this starter content with your own design -->
+    {categories.map((cat) => (
+      <section class="mb-10">
+        <h2 class="text-sm font-mono uppercase tracking-widest text-stone-500 mb-4">{cat}</h2>
+        {data.filter((d: any) => d.category === cat).map((entry: any) => (
+          <article class="border border-stone-200 bg-white p-5 mb-3">
+            <h3 class="font-semibold text-lg">{entry.title}</h3>
+            <p class="text-stone-600 mt-1">{entry.summary}</p>
+            {entry.sources?.length > 0 && (
+              <p class="text-sm text-stone-400 mt-2">
+                Source: <a href={entry.sources[0].url} target="_blank" class="underline">{entry.sources[0].title}</a>
+              </p>
+            )}
+          </article>
+        ))}
+      </section>
+    ))}
+  </main>
+</Base>

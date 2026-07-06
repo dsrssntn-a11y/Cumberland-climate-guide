@@ -1,0 +1,34 @@
+[
+  {
+    "id": "toronto-composting-01",
+    "city": "Toronto",
+    "category": "Composting",
+    "title": "Curbside Green Bin Pickup",
+    "summary": "Toronto collects organic waste curbside every week using the Green Bin program, available to all single-family homes and most multi-unit buildings.",
+    "details": [
+      "Accepted: fruit and vegetable scraps, coffee grounds, meat, dairy, soiled paper",
+      "Collection is weekly year-round, on your regular garbage day",
+      "Green Bins are free from city distribution events or by calling 311"
+    ],
+    "sources": [
+      { "title": "City of Toronto — Green Bin Overview", "url": "https://www.toronto.ca/services-payments/recycling-organics-garbage/houses/what-goes-in-my-green-bin/" }
+    ],
+    "verification": { "status": "verified", "lastChecked": "2026-07-01", "method": "schema+spot+freshness" }
+  },
+  {
+    "id": "toronto-bike-01",
+    "city": "Toronto",
+    "category": "Bike Infrastructure",
+    "title": "Bike Share Toronto — Annual Membership",
+    "summary": "City-run bike share with 7,000+ bikes across 700 stations. Annual membership covers unlimited 30-minute rides.",
+    "details": [
+      "Stations concentrated downtown, expanding into Scarborough and Etobicoke",
+      "Annual pass is $99, single rides $3.25 for 30 minutes",
+      "E-bikes available at select stations for an extra per-minute fee"
+    ],
+    "sources": [
+      { "title": "Bike Share Toronto", "url": "https://bikesharetoronto.com/" }
+    ],
+    "verification": { "status": "verified", "lastChecked": "2026-07-01", "method": "schema+spot+freshness" }
+  }
+]
