@@ -1,0 +1,23 @@
+name: Security Checks
+on:
+  push:
+  pull_request:
+  schedule:
+    - cron: '0 3 * * 0'
+
+jobs:
+  audit:
+    name: Dependency audit
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
+      - name: Install dependencies
+        run: pnpm install
+      - name: Run audit
+        run: pnpm audit --audit-level=moderate
