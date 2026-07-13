@@ -1,0 +1,26 @@
+name: OWASP Dependency-Check
+on:
+  push:
+  pull_request:
+  schedule:
+    - cron: '0 5 * * 0'
+
+jobs:
+  dependency-check:
+    name: OWASP Dependency-Check (Docker)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install dependencies (frozen lockfile)
+        uses: pnpm/action-setup@v2
+      - name: Run pnpm install (frozen lockfile)
+        run: pnpm install --frozen-lockfile
+      - name: Run OWASP Dependency-Check
+        run: |
+          mkdir -p dc-reports
+          docker run --rm -v ${{ github.workspace }}:/src -v ${{ github.workspace }}/dc-reports:/report owasp/dependency-check:latest --project "terra-city-guide" --scan /src --format HTML --out /report
+      - name: Upload report
+        uses: actions/upload-artifact@v4
+        with:
+          name: dependency-check-report
+          path: dc-reports

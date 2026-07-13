@@ -1,0 +1,23 @@
+name: Lockfile Integrity Check
+on:
+  push:
+  pull_request:
+
+jobs:
+  check-lockfile:
+    name: Verify lockfiles are unchanged
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
+      - name: Install dependencies (frozen lockfile)
+        run: pnpm install --frozen-lockfile
+      - name: Check for lockfile changes
+        run: |
+          git --no-pager status --porcelain
+          git diff --exit-code -- pnpm-lock.yaml package-lock.json yarn.lock || (echo "Lockfile changed during install. Commit updated lockfile." && exit 1)

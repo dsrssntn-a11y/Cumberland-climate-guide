@@ -8,7 +8,10 @@
     "preview": "astro preview",
     "security:audit": "pnpm audit --audit-level=moderate",
     "security:approve-builds": "pnpm approve-builds --all",
-    "security:outdated": "pnpm outdated"
+    "security:outdated": "pnpm outdated",
+    "security:snyk": "snyk test",
+    "security:dependency-check": "echo 'Run OWASP Dependency-Check via CI workflow'",
+    "security:lockfile-check": "pnpm install --frozen-lockfile"
   },
   "dependencies": {
     "astro": "^7.0.7",
