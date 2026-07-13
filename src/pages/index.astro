@@ -8,30 +8,93 @@ const city = data[0]?.city ?? "Your City";
 ---
 
 <Base title={`${city} Climate Action Guide`}>
-  <main class="max-w-3xl mx-auto px-6 py-12">
-    <header class="mb-12">
-      <h1 class="text-4xl font-bold tracking-tight mb-3">{city} Climate Action Guide</h1>
-      <p class="text-lg text-stone-600">
+  <main class="max-w-3xl lg:max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-16">
+    <header class="mb-10 sm:mb-14">
+      <h1 class="font-[Fraunces,ui-serif,serif] text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-amber-950 mb-3">{city} Climate Action Guide</h1>
+      <p class="text-base sm:text-lg text-amber-950 max-w-2xl">
         Practical local actions you can take today — verified and sourced.
       </p>
     </header>
 
-    <!-- Replace this starter content with your own design -->
+    <div id="category-filters" class="flex flex-wrap gap-2 sm:gap-3 mb-12 sm:mb-16" role="group" aria-label="Filter by category">
+      {categories.map((cat) => (
+        <button
+          type="button"
+          data-category={cat}
+          aria-pressed="false"
+          class="filter-btn px-4 py-2 text-sm font-medium rounded-full border border-stone-300 bg-white text-stone-700 hover:border-amber-400 hover:text-amber-800 transition-colors cursor-pointer"
+        >
+          {cat}
+        </button>
+      ))}
+    </div>
+
     {categories.map((cat) => (
-      <section class="mb-10">
-        <h2 class="text-sm font-mono uppercase tracking-widest text-stone-500 mb-4">{cat}</h2>
-        {data.filter((d: any) => d.category === cat).map((entry: any) => (
-          <article class="border border-stone-200 bg-white p-5 mb-3">
-            <h3 class="font-semibold text-lg">{entry.title}</h3>
-            <p class="text-stone-600 mt-1">{entry.summary}</p>
-            {entry.sources?.length > 0 && (
-              <p class="text-sm text-stone-400 mt-2">
-                Source: <a href={entry.sources[0].url} target="_blank" class="underline">{entry.sources[0].title}</a>
-              </p>
-            )}
-          </article>
-        ))}
+      <section class="category-section mb-14 sm:mb-20 last:mb-0" data-category={cat}>
+        <h2 class="text-xs sm:text-sm font-mono uppercase tracking-widest text-amber-950 mb-5 sm:mb-6">{cat}</h2>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6">
+          {data.filter((d: any) => d.category === cat).map((entry: any) => (
+            <article class="border border-stone-200 bg-white rounded-xl p-5 sm:p-6 shadow-sm hover:shadow-md transition-shadow">
+              <h3 class="font-[Fraunces,ui-serif,serif] font-semibold text-lg text-stone-900">{entry.title}</h3>
+              <p class="text-stone-600 mt-2 leading-relaxed">{entry.summary}</p>
+
+              {entry.details?.length > 0 && (
+                <ul class="list-disc list-outside pl-5 mt-4 space-y-1.5 text-sm text-stone-700 leading-relaxed">
+                  {entry.details.map((detail: string) => (
+                    <li>{detail}</li>
+                  ))}
+                </ul>
+              )}
+
+              {entry.sources?.length > 0 && (
+                <div class="mt-5 pt-4 border-t border-stone-100 flex flex-wrap gap-x-4 gap-y-1.5 text-xs">
+                  {entry.sources.map((source: { title: string; url: string }) => (
+                    <a
+                      href={source.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="text-stone-400 underline decoration-stone-300 underline-offset-2 hover:text-amber-700 hover:decoration-amber-400 transition-colors"
+                    >
+                      {source.title}
+                    </a>
+                  ))}
+                </div>
+              )}
+            </article>
+          ))}
+        </div>
       </section>
     ))}
   </main>
 </Base>
+
+<script>
+  const buttons = document.querySelectorAll<HTMLButtonElement>(".filter-btn");
+  const sections = document.querySelectorAll<HTMLElement>(".category-section");
+
+  function applyFilter(active: string | null) {
+    buttons.forEach((btn) => {
+      const isActive = btn.dataset.category === active;
+      btn.setAttribute("aria-pressed", String(isActive));
+      btn.classList.toggle("bg-amber-700", isActive);
+      btn.classList.toggle("text-white", isActive);
+      btn.classList.toggle("border-amber-700", isActive);
+      btn.classList.toggle("bg-white", !isActive);
+      btn.classList.toggle("text-stone-700", !isActive);
+      btn.classList.toggle("border-stone-300", !isActive);
+    });
+
+    sections.forEach((section) => {
+      section.classList.toggle("hidden", active !== null && section.dataset.category !== active);
+    });
+  }
+
+  let activeCategory: string | null = null;
+
+  buttons.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      activeCategory = activeCategory === btn.dataset.category ? null : btn.dataset.category ?? null;
+      applyFilter(activeCategory);
+    });
+  });
+</script>

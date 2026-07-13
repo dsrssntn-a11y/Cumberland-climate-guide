@@ -1,34 +1,431 @@
 [
   {
-    "id": "toronto-composting-01",
-    "city": "Toronto",
+    "id": "cumberland-ri-composting-01",
+    "city": "Cumberland, RI",
     "category": "Composting",
-    "title": "Curbside Green Bin Pickup",
-    "summary": "Toronto collects organic waste curbside every week using the Green Bin program, available to all single-family homes and most multi-unit buildings.",
+    "title": "Cumberland Curbside Yard Waste Collection",
+    "summary": "The Town of Cumberland picks up yard waste and leaves right from the curb, so residents can keep grass clippings and brush out of the trash and headed toward composting instead of the landfill.",
     "details": [
-      "Accepted: fruit and vegetable scraps, coffee grounds, meat, dairy, soiled paper",
-      "Collection is weekly year-round, on your regular garbage day",
-      "Green Bins are free from city distribution events or by calling 311"
+      "Curbside collection runs weekly from mid-April through mid-June, biweekly from late June through late September, and weekly again from mid-October through mid-December.",
+      "Yard waste must go in biodegradable brown paper lawn bags, not plastic bags.",
+      "Small branches and twigs under 3 feet long can be bundled and set out with regular yard waste.",
+      "Yard waste can also be dropped off directly at the Pascale Highway Facility (17 Old Mendon Rd.), Monday-Friday, 9am-2pm.",
+      "Questions go to the Town Hall/Recycling Office at 401-728-2400 ext. 155 or 125."
     ],
     "sources": [
-      { "title": "City of Toronto — Green Bin Overview", "url": "https://www.toronto.ca/services-payments/recycling-organics-garbage/houses/what-goes-in-my-green-bin/" }
+      { "title": "Trash & Recycling - Cumberland, RI", "url": "https://www.cumberlandri.gov/251/Trash-Recycling" },
+      { "title": "Cumberland Mini A to Z - RIRRC", "url": "https://rirrc.org/towns/cumberland" }
     ],
-    "verification": { "status": "verified", "lastChecked": "2026-07-01", "method": "schema+spot+freshness" }
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-07-12",
+      "method": "schema+spot+freshness"
+    }
   },
   {
-    "id": "toronto-bike-01",
-    "city": "Toronto",
-    "category": "Bike Infrastructure",
-    "title": "Bike Share Toronto — Annual Membership",
-    "summary": "City-run bike share with 7,000+ bikes across 700 stations. Annual membership covers unlimited 30-minute rides.",
+    "id": "cumberland-ri-composting-02",
+    "city": "Cumberland, RI",
+    "category": "Composting",
+    "title": "Christmas Tree Composting Drop-off",
+    "summary": "Every January, Cumberland residents can drop off their real Christmas trees and wreaths at three town sites so they get composted instead of thrown in the trash.",
     "details": [
-      "Stations concentrated downtown, expanding into Scarborough and Etobicoke",
-      "Annual pass is $99, single rides $3.25 for 30 minutes",
-      "E-bikes available at select stations for an extra per-minute fee"
+      "Accepted only during the month of January; trees are not picked up curbside and won't be accepted as regular trash.",
+      "Drop-off sites: Tucker Field (2600 Mendon Rd.), Kent St. Garage (37 Blackstone St., Mon-Fri 8am-2pm), and Northern Garage (66 Nate Whipple Hwy.).",
+      "Trees and wreaths must be free of tinsel, ornaments, wire, or plastic bags before drop-off."
     ],
     "sources": [
-      { "title": "Bike Share Toronto", "url": "https://bikesharetoronto.com/" }
+      { "title": "Cumberland Mini A to Z - RIRRC", "url": "https://rirrc.org/towns/cumberland" }
     ],
-    "verification": { "status": "verified", "lastChecked": "2026-07-01", "method": "schema+spot+freshness" }
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-07-12",
+      "method": "schema+spot+freshness"
+    }
+  },
+  {
+    "id": "cumberland-ri-composting-03",
+    "city": "Cumberland, RI",
+    "category": "Composting",
+    "title": "Free Backyard Food Scrap Composting Guide",
+    "summary": "Rhode Island's state recycling agency publishes a step-by-step guide for composting food scraps at home, aimed at anyone in the state, including Cumberland residents, who wants to keep food waste out of the trash.",
+    "details": [
+      "Covers what to compost, bin setup, troubleshooting odor and pests, and how to use finished compost in the garden.",
+      "Published by Rhode Island Resource Recovery Corporation (RIRRC), the state agency that runs the central landfill and recycling programs for all RI cities and towns, including Cumberland.",
+      "Free to access online; no sign-up or fee required."
+    ],
+    "sources": [
+      { "title": "Food Scrap Composting - RIRRC", "url": "https://rirrc.org/recycling-composting-disposal/do-it-yourself-composting/food-scrap-composting" }
+    ],
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-07-12",
+      "method": "schema+spot+freshness"
+    }
+  },
+  {
+    "id": "cumberland-ri-composting-04",
+    "city": "Cumberland, RI",
+    "category": "Composting",
+    "title": "Buy a Backyard Compost Bin at the State Recycling Center",
+    "summary": "Cumberland residents can buy a discounted, recycled-plastic compost bin directly from Rhode Island's central recycling facility in Johnston, about a 20-minute drive from town.",
+    "details": [
+      "Bins hold 11.5 cubic feet, are made of recycled plastic, need no tools to assemble, and fit in about 3 feet of backyard space.",
+      "Purchase and pick-up happen at the RIRRC scalehouse in Johnston during operating hours (Mon-Fri 6am-3:45pm, Sat 6am-12pm).",
+      "Accepted payment methods are listed on RIRRC's Accepted Materials & Pricing page."
+    ],
+    "sources": [
+      { "title": "Buy a Compost Bin - RIRRC", "url": "https://rirrc.org/recycling-composting-disposal/do-it-yourself-composting/buy-a-compost-bin" }
+    ],
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-07-12",
+      "method": "schema+spot+freshness"
+    }
+  },
+  {
+    "id": "cumberland-ri-bike-infrastructure-01",
+    "city": "Cumberland, RI",
+    "category": "Bike Infrastructure",
+    "title": "Blackstone River Bikeway",
+    "summary": "An 11+ mile paved, mostly off-road bike path that starts right near Cumberland Town Hall and runs north to Woonsocket, part of Rhode Island's second-longest bikeway.",
+    "details": [
+      "Off-road path starts near Valley Falls Heritage Park/Cumberland Town Hall and runs northwest through Lincoln to Woonsocket's Rivers Edge Park, about 11.6 miles.",
+      "Includes a 540-foot elevated boardwalk through the Lonsdale marsh and multiple river crossings, dams, and old mill sites.",
+      "Free public parking is available at Front Street in Cumberland, among other lots along the route.",
+      "On-road, sharrow-marked routes connect the off-road path south to India Point Park in Providence for experienced riders."
+    ],
+    "sources": [
+      { "title": "Blackstone River Bikeway - RIDOT", "url": "https://www.dot.ri.gov/travel/bikeri/blackstone.php" }
+    ],
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-07-12",
+      "method": "schema+spot+freshness"
+    }
+  },
+  {
+    "id": "cumberland-ri-bike-infrastructure-02",
+    "city": "Cumberland, RI",
+    "category": "Bike Infrastructure",
+    "title": "Erika Niedowski Memorial Electric Bicycle Rebate",
+    "summary": "A state rebate that knocks the cost off buying an e-bike or e-cargo bike from a Rhode Island bike shop, making it more affordable for Cumberland residents to swap car trips for e-bike trips.",
+    "details": [
+      "Standard rebate: up to $350 or 30% of purchase price, whichever is less.",
+      "Income-qualified rebate: up to $750 or 75% of purchase price, whichever is less.",
+      "Limit of 2 rebates per household; e-bike must be bought new from an RI bike shop specializing in bike/e-bike sales.",
+      "Apply online through the state's DRIVE portal after purchase."
+    ],
+    "sources": [
+      { "title": "Erika Niedowski Memorial Electric Bicycle Rebate Program - RI DRIVE", "url": "https://drive.ri.gov/erika-niedowski-memorial-electric-bicycle-rebate-program" }
+    ],
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-07-12",
+      "method": "schema+spot+freshness"
+    }
+  },
+  {
+    "id": "cumberland-ri-bike-infrastructure-03",
+    "city": "Cumberland, RI",
+    "category": "Bike Infrastructure",
+    "title": "Valley Falls Heritage Park Trailhead Access",
+    "summary": "The Cumberland trailhead near Valley Falls Heritage Park and Front Street is the southern starting point for the off-road stretch of the Blackstone River Bikeway, with free parking for cyclists.",
+    "details": [
+      "Located near Cumberland Town Hall; marks the start of the more-than-11-mile off-road bikeway heading north to Woonsocket.",
+      "Free public parking lot at Front Street, Cumberland.",
+      "Good starting point for families or less-experienced riders since the path is off-road heading north from here."
+    ],
+    "sources": [
+      { "title": "Blackstone River Bikeway - RIDOT (Parking Information)", "url": "https://www.dot.ri.gov/travel/bikeri/blackstone.php" }
+    ],
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-07-12",
+      "method": "schema+spot+freshness"
+    }
+  },
+  {
+    "id": "cumberland-ri-bike-infrastructure-04",
+    "city": "Cumberland, RI",
+    "category": "Bike Infrastructure",
+    "title": "Bike Rhode Island Statewide Path Map & Planning Tool",
+    "summary": "RIDOT's Bike RI hub and interactive Story Map help Cumberland residents plan longer rides connecting the Blackstone River Bikeway to other paths across the state.",
+    "details": [
+      "Interactive Story Map shows all RI bike paths, mileage, and connections in one place.",
+      "Includes downloadable PDF maps for each bikeway, including the Blackstone River Bikeway that runs through Cumberland.",
+      "Run by the Rhode Island Department of Transportation; free to use, no sign-up needed."
+    ],
+    "sources": [
+      { "title": "BikeRI - RIDOT", "url": "https://www.dot.ri.gov/travel/bikeri/" }
+    ],
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-07-12",
+      "method": "schema+spot+freshness"
+    }
+  },
+  {
+    "id": "cumberland-ri-solar-rebates-01",
+    "city": "Cumberland, RI",
+    "category": "Solar Rebates",
+    "title": "Renewable Energy Fund (REF) Solar Rebate",
+    "summary": "A cash rebate from RI Commerce that pays homeowners, including in Cumberland, a set amount per watt of solar installed on their primary residence.",
+    "details": [
+      "Pays $0.65/watt, capped at $5,000 for residential systems; add $2,000 more if you pair it with a battery.",
+      "You must apply and get conditional approval before installation starts; applications go through your solar installer.",
+      "Grant rounds open in spring, summer, and fall each year.",
+      "Applicant must own the property, and the property must be in Rhode Island with good sun access."
+    ],
+    "sources": [
+      { "title": "State and Federal Energy Incentives - RI Office of Energy Resources", "url": "https://energy.ri.gov/incentives" },
+      { "title": "Renewable Energy Fund - RI Commerce", "url": "https://commerceri.com/renewable-energy-fund/" }
+    ],
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-07-12",
+      "method": "schema+spot+freshness"
+    }
+  },
+  {
+    "id": "cumberland-ri-solar-rebates-02",
+    "city": "Cumberland, RI",
+    "category": "Solar Rebates",
+    "title": "Renewable Energy Growth (REG) Program Payments",
+    "summary": "A 15-20 year payment program that pays RI solar owners, including Cumberland homeowners, a fixed rate for every kilowatt-hour their panels produce.",
+    "details": [
+      "Pays $0.27/kWh for eligible residential systems, guaranteed for 15-20 years depending on system type.",
+      "A typical 8kW system producing about 9,700 kWh/year earns roughly $2,600/year through REG.",
+      "Administered alongside the REF rebate; check with your installer about applying for both."
+    ],
+    "sources": [
+      { "title": "State and Federal Energy Incentives - RI Office of Energy Resources", "url": "https://energy.ri.gov/incentives" }
+    ],
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-07-12",
+      "method": "schema+spot+freshness"
+    }
+  },
+  {
+    "id": "cumberland-ri-solar-rebates-03",
+    "city": "Cumberland, RI",
+    "category": "Solar Rebates",
+    "title": "20-Year Property Tax Exemption for Solar",
+    "summary": "Rhode Island exempts the added home value from a residential solar installation from property taxes for 20 years, so a Cumberland homeowner's tax bill won't go up because of new solar panels.",
+    "details": [
+      "Exemption applies under state law in RI cities and towns, including Cumberland; confirm with the Cumberland Tax Assessor's office that it has been applied to your account.",
+      "Rhode Island also offers a 7% sales tax exemption on solar equipment purchases."
+    ],
+    "sources": [
+      { "title": "State and Federal Energy Incentives - RI Office of Energy Resources", "url": "https://energy.ri.gov/incentives" }
+    ],
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-07-12",
+      "method": "schema+spot+freshness"
+    }
+  },
+  {
+    "id": "cumberland-ri-solar-rebates-04",
+    "city": "Cumberland, RI",
+    "category": "Solar Rebates",
+    "title": "Net Metering for Home Solar",
+    "summary": "Net metering lets Cumberland homeowners with solar panels earn bill credits for excess electricity sent back to the grid, then draw down those credits when their panels aren't producing enough.",
+    "details": [
+      "Available to RI Energy customers with grid-connected solar systems statewide, including Cumberland.",
+      "Credits carry over on your bill for times when solar production is low, like at night or in winter."
+    ],
+    "sources": [
+      { "title": "State and Federal Energy Incentives - RI Office of Energy Resources", "url": "https://energy.ri.gov/incentives" }
+    ],
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-07-12",
+      "method": "schema+spot+freshness"
+    }
+  },
+  {
+    "id": "cumberland-ri-solar-rebates-05",
+    "city": "Cumberland, RI",
+    "category": "Solar Rebates",
+    "title": "ConnectedSolutions Battery Incentive",
+    "summary": "A demand-response program that pays Cumberland homeowners with a solar battery for letting RI Energy draw on that battery during peak demand periods.",
+    "details": [
+      "Pays up to $400 per kW of battery capacity made available during peak events.",
+      "Stacks with REF's $2,000 battery adder and REG payments for solar-plus-storage systems.",
+      "Enrollment is through RI Energy; batteries must meet program eligibility requirements."
+    ],
+    "sources": [
+      { "title": "ConnectedSolutions - RI Office of Energy Resources", "url": "https://energy.ri.gov/storage/connectedsolutions" }
+    ],
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-07-12",
+      "method": "schema+spot+freshness"
+    }
+  },
+  {
+    "id": "cumberland-ri-ev-charging-01",
+    "city": "Cumberland, RI",
+    "category": "EV Charging",
+    "title": "DRIVE EV Purchase/Lease Rebate",
+    "summary": "A state rebate that pays Cumberland residents cash back after buying or leasing an electric vehicle from an RI dealership.",
+    "details": [
+      "New battery-electric or fuel-cell vehicles: up to $3,000; new plug-in hybrids: up to $2,000.",
+      "Used battery-electric or fuel-cell vehicles: up to $2,500; used plug-in hybrids: up to $1,750.",
+      "Vehicle price caps: $75,000 for new, $55,000 for used; must buy/lease from a licensed RI dealership.",
+      "Apply within 120 days of purchase; rebates are first-come, first-served, paid after purchase (not a tax credit)."
+    ],
+    "sources": [
+      { "title": "DRIVE EV Overview - RI DRIVE", "url": "https://drive.ri.gov/drive-ev-project" }
+    ],
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-07-12",
+      "method": "schema+spot+freshness"
+    }
+  },
+  {
+    "id": "cumberland-ri-ev-charging-02",
+    "city": "Cumberland, RI",
+    "category": "EV Charging",
+    "title": "DRIVE+ Income-Qualified EV Rebate Boost",
+    "summary": "An extra rebate on top of DRIVE EV for income-qualifying Cumberland residents buying or leasing an electric vehicle.",
+    "details": [
+      "Adds up to $1,500 to the standard DRIVE EV rebate for those who meet income requirements.",
+      "Applied for through the same drive.ri.gov application as the base DRIVE EV rebate."
+    ],
+    "sources": [
+      { "title": "DRIVE+ - RI DRIVE", "url": "https://drive.ri.gov/ev-programs/drive-plus" }
+    ],
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-07-12",
+      "method": "schema+spot+freshness"
+    }
+  },
+  {
+    "id": "cumberland-ri-ev-charging-03",
+    "city": "Cumberland, RI",
+    "category": "EV Charging",
+    "title": "PowerUpRI Home EV Charger Rebate",
+    "summary": "A rebate that covers most or all of the cost of installing a home Level 2 EV charger for Cumberland residents and landlords, launched August 2024.",
+    "details": [
+      "Standard rebate: up to $800 (100%) of charger purchase price with no electrical upgrade, or up to $1,000 (50%) of installation cost if an upgrade is needed.",
+      "Income-qualified rebate: same $800 purchase cap, but up to $1,500 (75%) toward installation with an electrical upgrade.",
+      "Charger must be Energy Star or UL certified, purchased new, and installed by a licensed electrician at a home you own or rent in RI.",
+      "Apply within 180 days of the electrician's installation receipt; one rebate per household for the program's lifetime."
+    ],
+    "sources": [
+      { "title": "PowerUpRI - RI DRIVE", "url": "https://drive.ri.gov/powerupri" }
+    ],
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-07-12",
+      "method": "schema+spot+freshness"
+    }
+  },
+  {
+    "id": "cumberland-ri-urban-tree-canopy-01",
+    "city": "Cumberland, RI",
+    "category": "Urban Tree Canopy",
+    "title": "Free Trees Through Groundwork RI's Tree Equity Initiative",
+    "summary": "Cumberland residents, businesses, and public spaces can request a free tree planted on their property through Groundwork Rhode Island's multi-year Tree Equity Initiative.",
+    "details": [
+      "Funded by a U.S. Forest Service Landscape Scale Restoration grant; aims to plant 2,000 trees across Central Falls, Cumberland, Lincoln, Woonsocket, and East Providence.",
+      "No cost to the tree recipient for the tree or planting; recipients agree to water the tree for 2-3 years until established.",
+      "Sign up online or email trees@groundworkri.org to request a planting."
+    ],
+    "sources": [
+      { "title": "New Tree Equity Planting Initiative - Groundwork Rhode Island", "url": "https://groundworkri.org/new-tree-equity-planting-initiative-in-central-falls-cumberland-lincoln-and-woonsocket/" }
+    ],
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-07-12",
+      "method": "schema+spot+freshness"
+    }
+  },
+  {
+    "id": "cumberland-ri-urban-tree-canopy-02",
+    "city": "Cumberland, RI",
+    "category": "Urban Tree Canopy",
+    "title": "Cumberland's Tree City USA Designation",
+    "summary": "Cumberland earned official Tree City USA status by committing to Arbor Day observance and formal tree management, joining a national network of towns recognized for urban forestry commitment.",
+    "details": [
+      "Cumberland's Lands and Conservation Commission serves as its tree board, meeting one of the four Tree City USA standards.",
+      "Other standards include a community tree ordinance, spending at least $2 per capita on urban forestry annually, and an official Arbor Day observance.",
+      "Designation is administered through the Arbor Day Foundation with Rhode Island DEM as the state partner."
+    ],
+    "sources": [
+      { "title": "Cumberland to become an official Tree City - Press Herald", "url": "https://www.pressherald.com/2024/02/27/cumberland-to-become-an-official-tree-city/" },
+      { "title": "Tree City USA, Growth Awards, Tree Campus USA, and Tree Line USA - RI DEM", "url": "https://dem.ri.gov/natural-resources-bureau/agriculture-and-forest-environment/forest-environment/urban-and-1" }
+    ],
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-07-12",
+      "method": "schema+spot+freshness"
+    }
+  },
+  {
+    "id": "cumberland-ri-urban-tree-canopy-03",
+    "city": "Cumberland, RI",
+    "category": "Urban Tree Canopy",
+    "title": "DEM Urban and Community Forestry Grants",
+    "summary": "Rhode Island DEM offers grants that Cumberland's town government or local nonprofits can apply for to fund tree planting, canopy planning, and urban forestry education.",
+    "details": [
+      "Urban and Community Forestry (UCF) Grant Program: $2,000-$10,000 grants, funded by the USDA Forest Service.",
+      "Tree Equity RI Grant Program: $10,000-$50,000 grants for canopy-expansion tree planting, funded by the Regional Greenhouse Gas Initiative (RGGI).",
+      "Recent rounds have awarded nearly $200,000 total across both programs statewide; open to municipalities and nonprofits, not individual residents directly.",
+      "Application deadlines typically fall in mid-January each year; check DEM's site for the current cycle."
+    ],
+    "sources": [
+      { "title": "Urban and Community Forestry Grant Program - RI DEM", "url": "https://dem.ri.gov/natural-resources-bureau/agriculture-and-forest-environment/forest-environment/urban-forestry-grants" },
+      { "title": "Tree Equity RI Grant Program - RI DEM", "url": "https://dem.ri.gov/natural-resources-bureau/agriculture-and-forest-environment/forest-environment/tree-equity-grant-program" }
+    ],
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-07-12",
+      "method": "schema+spot+freshness"
+    }
+  },
+  {
+    "id": "cumberland-ri-urban-tree-canopy-04",
+    "city": "Cumberland, RI",
+    "category": "Urban Tree Canopy",
+    "title": "DEM Urban and Community Forestry Technical Assistance",
+    "summary": "DEM's Division of Forest Environment offers free technical help to Rhode Island municipalities, including Cumberland, on tree canopy mapping, planning, and management.",
+    "details": [
+      "Services include canopy mapping, planting plans, tree ordinance and code development, and community engagement support.",
+      "Delivered in partnership with the Green Infrastructure Center; a rotating set of municipalities receive comprehensive assistance each cycle.",
+      "Contact: Urban and Community Forestry Program Coordinator, RI DEM Division of Forest Environment, 401-537-4067."
+    ],
+    "sources": [
+      { "title": "Urban and Community Forestry Program - RI DEM", "url": "https://dem.ri.gov/natural-resources-bureau/agriculture-and-forest-environment/forest-environment/urban-and-community" }
+    ],
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-07-12",
+      "method": "schema+spot+freshness"
+    }
+  },
+  {
+    "id": "cumberland-ri-urban-tree-canopy-05",
+    "city": "Cumberland, RI",
+    "category": "Urban Tree Canopy",
+    "title": "Free Energy-Saving Shade Trees",
+    "summary": "Each spring, DEM and the RI Tree Council give away free shade trees to Rhode Island residents, including Cumberland, meant to be planted for future energy savings.",
+    "details": [
+      "Over 2,000 trees given away statewide each year through the Energy-Saving Trees program, run with the Arbor Day Foundation.",
+      "Registration typically opens in April for spring planting; trees are distributed on a first-come, first-served basis while supplies last.",
+      "Look for the announcement on DEM's newsroom page each spring for registration dates."
+    ],
+    "sources": [
+      { "title": "Free Trees Available, Just in Time for Spring Planting - RI DEM", "url": "https://dem.ri.gov/press-releases/free-trees-available-just-time-spring-planting-registration-begins-april-12-popular" }
+    ],
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-07-12",
+      "method": "schema+spot+freshness"
+    }
   }
 ]

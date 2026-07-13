@@ -11,6 +11,7 @@
     "security:outdated": "pnpm outdated",
     "security:snyk": "snyk test",
     "security:dependency-check": "echo 'Run OWASP Dependency-Check via CI workflow'",
+    "security:secrets": "pnpm dlx gitleaks detect --source . --verbose --redact",
     "security:lockfile-check": "pnpm install --frozen-lockfile"
   },
   "dependencies": {
