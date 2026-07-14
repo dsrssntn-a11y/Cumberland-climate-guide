@@ -15,7 +15,7 @@
     "security:lockfile-check": "pnpm install --frozen-lockfile"
   },
   "dependencies": {
-    "astro": "^7.0.7",
+    "astro": "^7.0.9",
     "tailwindcss": "^4.1.8"
   },
   "devDependencies": {
