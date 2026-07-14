@@ -1,5 +1,6 @@
 ---
 import Base from "../layouts/Base.astro";
+import CategoryIcon from "../components/CategoryIcon.astro";
 import data from "../data/verified.json";
 
 // Group entries by category
@@ -8,6 +9,38 @@ const city = data[0]?.city ?? "Your City";
 ---
 
 <Base title={`${city} Climate Action Guide`}>
+  <svg width="0" height="0" class="absolute" aria-hidden="true">
+    <defs>
+      <clipPath id="scallop-edge" clipPathUnits="objectBoundingBox">
+        <path d="
+          M 0.025,0.006
+          C 0.065,0.006 0.085,0 0.125,0
+          C 0.175,0 0.2,0.006 0.25,0.006
+          C 0.3,0.006 0.325,0 0.375,0
+          C 0.425,0 0.45,0.006 0.5,0.006
+          C 0.55,0.006 0.575,0 0.625,0
+          C 0.675,0 0.7,0.006 0.75,0.006
+          C 0.8,0.006 0.825,0 0.875,0
+          C 0.915,0 0.935,0.006 0.975,0.006
+          C 0.9888,0.006 1,0.0172 1,0.031
+          L 1,0.969
+          C 1,0.9828 0.9888,0.994 0.975,0.994
+          C 0.935,0.994 0.915,1 0.875,1
+          C 0.825,1 0.8,0.994 0.75,0.994
+          C 0.7,0.994 0.675,1 0.625,1
+          C 0.575,1 0.55,0.994 0.5,0.994
+          C 0.45,0.994 0.425,1 0.375,1
+          C 0.325,1 0.3,0.994 0.25,0.994
+          C 0.2,0.994 0.175,1 0.125,1
+          C 0.085,1 0.065,0.994 0.025,0.994
+          C 0.0112,0.994 0,0.9828 0,0.969
+          L 0,0.031
+          C 0,0.0172 0.0112,0.006 0.025,0.006
+          Z
+        " />
+      </clipPath>
+    </defs>
+  </svg>
   <main class="max-w-3xl lg:max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-16">
     <header class="mb-10 sm:mb-14">
       <h1 class="font-[Fraunces,ui-serif,serif] text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-amber-950 mb-3">{city} Climate Action Guide</h1>
@@ -31,10 +64,19 @@ const city = data[0]?.city ?? "Your City";
 
     {categories.map((cat) => (
       <section class="category-section mb-14 sm:mb-20 last:mb-0" data-category={cat}>
-        <h2 class="text-lg sm:text-xl font-mono uppercase tracking-widest text-amber-950 mb-5 sm:mb-6">{cat}</h2>
+        <h2 class="flex items-center gap-2 text-lg sm:text-xl font-mono uppercase tracking-widest text-amber-950 mb-5 sm:mb-6">
+          <CategoryIcon category={cat} class="w-5 h-5 sm:w-6 sm:h-6 text-amber-800 shrink-0" />
+          {cat}
+        </h2>
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6">
-          {data.filter((d: any) => d.category === cat).map((entry: any) => (
-            <article class="wavy-card bg-white p-5 sm:p-6 shadow-sm hover:shadow-md transition-shadow">
+          {data.filter((d: any) => d.category === cat).map((entry: any, idx: number) => (
+            <article class={`wavy-card p-5 sm:p-6 shadow-sm hover:shadow-md transition-shadow ${idx === 0 ? "bg-[#E7D8C2]" : "bg-white"}`}>
+              {idx === 0 && (
+                <span class="inline-block bg-[#8B4513] text-white text-[11px] font-semibold uppercase tracking-wide rounded-full px-2.5 py-1 mb-3">
+                  Try This First
+                </span>
+              )}
+              <CategoryIcon category={entry.category} class="w-6 h-6 text-amber-800 mb-3" />
               <h3 class="font-[Fraunces,ui-serif,serif] font-semibold text-lg text-stone-900">{entry.title}</h3>
               <p class="text-stone-600 mt-2 leading-relaxed">{entry.summary}</p>
 
