@@ -10,7 +10,7 @@ jobs:
     name: OWASP Dependency-Check (Docker)
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - name: Install dependencies (frozen lockfile)
         uses: pnpm/action-setup@v2
       - name: Run pnpm install (frozen lockfile)
