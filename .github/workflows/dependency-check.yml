@@ -20,7 +20,7 @@ jobs:
           mkdir -p dc-reports
           docker run --rm -v ${{ github.workspace }}:/src -v ${{ github.workspace }}/dc-reports:/report owasp/dependency-check:latest --project "terra-city-guide" --scan /src --format HTML --out /report
       - name: Upload report
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: dependency-check-report
           path: dc-reports
